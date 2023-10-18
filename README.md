@@ -60,3 +60,13 @@ flowchart TD
 
 
 
+### Git remotes
+
+Please ensure that you have added the upstream repo:
+`git remote add upstream https://github.com/gofair-foundation/fsr_qualification.git`
+
+This is required for integrating merged pull requests:
+
+`git fetch upstream`
+
+`git merge upstream/main`
