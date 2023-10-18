@@ -14,7 +14,7 @@ The basic workflow is:
 4. Push your change
 5. Raise a Pull Request
 
-When you submit the PR, ensure that the title references the issue number, e.g. `Resolves #12` (for syntax help please see this [article](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue)).
+When you submit the PR, ensure that the description references the issue number, e.g. `Resolves #12` (for syntax help please see this [article](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue)).
 
 
 
