@@ -14,7 +14,7 @@ The basic workflow is:
 4. Push your change
 5. Raise a Pull Request
 
-When you submit the PR, ensure that the title references the issue number, e.g. `Resolves #12` (for syntax help please see this [article](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue)).
+When you submit the PR, ensure that the description references the issue number, e.g. `Resolves #12` (for syntax help please see this [article](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue)).
 
 
 
@@ -60,3 +60,13 @@ flowchart TD
 
 
 
+### Git remotes
+
+Please ensure that you have added the upstream repo:
+`git remote add upstream https://github.com/gofair-foundation/fsr_qualification.git`
+
+This is required for integrating merged pull requests:
+
+`git fetch upstream`
+
+`git merge upstream/main`
