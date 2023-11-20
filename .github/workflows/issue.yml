@@ -1,0 +1,14 @@
+name: issue_creation
+
+on:
+  schedule:
+    - cron: '5 15 * * 1'
+    - cron: '5 5 * * 1,2,3,4,5'
+    
+jobs:
+  issue_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create issues
+        uses: gofair-foundation/qualification-issue-creation@v1
+        
