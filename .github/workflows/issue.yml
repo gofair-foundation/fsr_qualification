@@ -9,4 +9,6 @@ jobs:
     steps:
       - name: Create issues
         uses: gofair-foundation/qualification-issue-creation-action@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         
