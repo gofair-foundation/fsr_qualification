@@ -8,7 +8,7 @@ that are in a qualification workflow or have been qualified (or rejected).
 
 The basic workflow is:
 
-1. Open an issue
+1. Claim an issue
 2. Get the latest version
 3. Modify the CSV accordingly
 4. Push your change
