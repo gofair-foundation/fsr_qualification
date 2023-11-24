@@ -24,24 +24,25 @@ When you submit the PR, ensure that the description references the issue number,
 flowchart TD
 
   start([Start]) --> issue
-  issue[Open an issue] --> repo
+  issue[Claim an issue] --> repo
   
   repo{Local repo?}
-  repo -->|No|fork
-  repo -->|Yes|pull
+  repo -->|No|clone
+  repo -->|Yes|switch
 
   subgraph "No local repo"
-    fork[[Fork repo]] --> clone[[git clone]]
+    clone[[git clone]]
   end
   subgraph "Local repo exists"
-    pull[[git fetch upstream]] --> lmerge[[git merge upstream/main]]
+    switch[[git switch main]] --> pull[[git pull]]
   end
   
-  clone --> modify[Update CSV]
-  lmerge --> modify
+  clone --> branch[[git checkout -b]]
+  pull --> branch
+  branch --> modify[Update CSV]
   
   subgraph "Resolve issue"
-    modify --> commit[[git commit]] --> push[[git push]]
+    modify --> gadd[[git add]] --> commit[[git commit]] --> push[[git push]]
   end
   
   push --> pr
@@ -56,17 +57,3 @@ flowchart TD
 
 ```
 
-
-
-
-
-### Git remotes
-
-Please ensure that you have added the upstream repo:
-`git remote add upstream https://github.com/gofair-foundation/fsr_qualification.git`
-
-This is required for integrating merged pull requests:
-
-`git fetch upstream`
-
-`git merge upstream/main`
