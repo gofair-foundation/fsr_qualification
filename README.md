@@ -5,5 +5,5 @@ The process can be undertaken by qualified FIP (or 3PFF) Facilitators and the ch
 
 ## Contributing
 
-See the guide on [contributing](CONTRIBUTING) that explains the functional qualification process in conjunction with the git/GitHub workflow.
+See the guide on [contributing](CONTRIBUTING.md) that explains the functional qualification process in conjunction with the git/GitHub workflow.
 
