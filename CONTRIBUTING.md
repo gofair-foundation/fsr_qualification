@@ -138,6 +138,7 @@ Then you should get git on your computer by downloading git from http://git-scm.
 4. To create a working copy on your computer you need to use the command*:* **git clone** **[github repo URI]** 
    (i.e. `git clone https://github.com/gofair-foundation/fsr_qualification.git`)
 5. Then go to the folder that has been cloned on your computer: **cd [folder]** (e.g. cd fsr_qualification)
+6. In GitHub go to [GitHub/actions](https://github.com/gofair-foundation/fsr_qualification/actions): click on **issue_creation** and **run workflow** to update the issues with newly created FSR nanopubs
 
 ### **G1 B Steps for the Editor to document the Quality Check**
 
@@ -159,11 +160,7 @@ From the folder created above (e.g. git_repo/fsr_qualification)
 
 1. Create a new branch for the issue you are working on e.g.: **git checkout -b issue_353_prov**
 
-2. Now you can directly open the *FSR_QC.csv* file in Excel (if you have problems, please check these settings
-
-   [^1]: First you have to make sure that in the system settings for language & region>>related settings>>administrative language setting>> format>>additional settings you have a ‘,’ . Second you need to change the setting in Excel: Go to Options >> Advanced and set a dot (.) as decimal separator.
-
-   ) and add a new line for the FSR and add your review only in the first part (annotated in the column headers with '1.') by following the instructions in the headers. Save the file and close it.
+2. Now you can directly open the *FSR_QC.csv* file in Excel (if you have problems to open the csv directly in Excel, please check these settings: First you have to make sure that in the system settings for language & region>>related settings>>administrative language setting>> format>>additional settings you have a ‘,’ . Second you need to change the setting in Excel: Go to Options >> Advanced and set a dot (.) as decimal separator) and add a new line for the FSR and add your review only in the first part (annotated in the column headers with '1.') by following the instructions in the headers. Save the file and close it.
 
 #### **Do the quality check ->** [**F1 C + D**](#f1-as-editor)
 
@@ -217,13 +214,14 @@ And create **pull request**
 6. **git status** should show you now that changes should be committed
 7. Then use the command to commit it to your local copy e.g. : **git commit -m “text (disapproved FSR nanopub)”**
 8. To add this commit to the existing Pull Request you need to use the command e.g.: **git push**
-9. **Merge pull reques**t and **confirm merge,** which closes the issue
-10. Delete the branch you created on github 
-11. In the command prompt:**git switch main****
-    **(Ensure that you do not have the CSV file open e.g. in Excel)
-12. Use the command: **git pull**
-13. Use the command: **git status** and you should see that you are in origin/main
-14. Use the command: **git branch -d issue_353_prov** to delete the branch locally
+9. Go back to your branch on GitHub and click on contribute: **Open pull request**
+10. **Merge pull request** and **confirm merge,** which closes the issue
+11. Delete the branch you created on github 
+12. In the command prompt: **git switch main**
+    (Ensure that you do not have the CSV file open e.g. in Excel)
+13. Use the command: **git pull**
+14. Use the command: **git status** and you should see that you are in origin/main
+15. Use the command: **git branch -d issue_353_prov** to delete the branch locally
 
 Note: While you are waiting for the reviewer to give you feedback for your last pull request you might want to start with a new github issue. In this case you need to make sure to switch to main (11) and make a git pull (12).
 
