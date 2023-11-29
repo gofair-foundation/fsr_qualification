@@ -138,6 +138,7 @@ Then you should get git on your computer by downloading git from http://git-scm.
 4. To create a working copy on your computer you need to use the command*:* **git clone** **[github repo URI]** 
    (i.e. `git clone https://github.com/gofair-foundation/fsr_qualification.git`)
 5. Then go to the folder that has been cloned on your computer: **cd [folder]** (e.g. cd fsr_qualification)
+6. See [Appendix B](#appendix-b-refreshing-the-github-issues-list)
 
 ### **G1 B Steps for the Editor to document the Quality Check**
 
