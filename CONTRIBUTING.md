@@ -122,7 +122,7 @@ To collaborate you need a github account and we need to add your account to the 
 
 Then you should get git on your computer by downloading git from http://git-scm.com/downloads
 
-### **G1 A Setup steps**
+### **G1 A Setup steps (only needed once)**
 
 1. Create a folder on your local machine for your github repositories (e.g.: git_repo)
 
@@ -138,7 +138,6 @@ Then you should get git on your computer by downloading git from http://git-scm.
 4. To create a working copy on your computer you need to use the command*:* **git clone** **[github repo URI]** 
    (i.e. `git clone https://github.com/gofair-foundation/fsr_qualification.git`)
 5. Then go to the folder that has been cloned on your computer: **cd [folder]** (e.g. cd fsr_qualification)
-6. In GitHub go to [GitHub/actions](https://github.com/gofair-foundation/fsr_qualification/actions): click on **issue_creation** and **run workflow** to update the issues with newly created FSR nanopubs
 
 ### **G1 B Steps for the Editor to document the Quality Check**
 
@@ -214,7 +213,6 @@ And create **pull request**
 6. **git status** should show you now that changes should be committed
 7. Then use the command to commit it to your local copy e.g. : **git commit -m “text (disapproved FSR nanopub)”**
 8. To add this commit to the existing Pull Request you need to use the command e.g.: **git push**
-9. Go back to your branch on GitHub and click on contribute: **Open pull request**
 10. **Merge pull request** and **confirm merge,** which closes the issue
 11. Delete the branch you created on github 
 12. In the command prompt: **git switch main**
