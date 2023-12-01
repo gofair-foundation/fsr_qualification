@@ -9,7 +9,7 @@ An FSR qualification process requires **two facilitators** to quality-check new 
 There are two main procedures to take into account:
 
 1. the functional qualification process (F steps)
-2. the documentation of the technical qualification process, which is handled via git (G steps)
+2. the documentation of the technical qualification process, which is handled via git/GitHub (G steps)
 
 Both work together, as the 2) is included in the 1), documenting the actions in git. 
 
@@ -19,11 +19,11 @@ Both work together, as the 2) is included in the 1), documenting the actions in 
 
 **![img](images/fig1.png)**
 
-#### **Github Setup ->** [**G1 A Setup**](#g1-a-setup-steps) 
+#### **GitHub Setup (only needed once) ->** [**G1 A Setup**](#g1-a-setup-steps) 
 
 ### **F1 As Editor**
 
-A. Choose an issue from GitHub: https://github.com/gofair-foundation/fsr_qualification/issues 
+A. Choose an issue from GitHub: https://github.com/gofair-foundation/fsr_qualification/issues - these issues are created by a [GitHub action](#appendix-b-refreshing-the-github-issues-list) which looks for unqualified FSRs in Nanodash.
    These can be filtered by label (FSR type) from https://github.com/gofair-foundation/fsr_qualification/labels 
    Assign it to you (so that everybody can see that you are working on it)
 
@@ -109,17 +109,19 @@ Make sure to get in contact with the creator of the FSR nanopub before you chang
 
 #### **Git Document Final Qualification steps ->** [**G1 C**](#g1-c-final-steps-for-the-editor)
 
-## **Technical qualification workflow (documentation in github) - G Steps**
+## **Technical qualification workflow (documentation in GitHub) - G Steps**
 
-For the whole workflow we have prepared a GFF github repository to document all steps: https://github.com/gofair-foundation/fsr_qualification. The overall idea is that you should document what you do step for step. To stay on the safe side, you create for each issue a branch in github but also on your local machine. You add a new line in the csv and then you push the updated csv into the branch in github and then you open a pull request to update the main. The reviewer then reviews the pull request and will answer with a comment (to not allow it), with approval or with request changes. The editor will then actually do the changes in nanodash and finalise the documentation and close the issue and branches in github and locally.
+For the whole workflow we have prepared this GFF GitHub repository to document all steps: https://github.com/gofair-foundation/fsr_qualification. The overall idea is that you should document what you do step for step. To stay on the safe side, you create for each issue a branch on your local machine. You add a new line in the csv and then you push the updated csv to the corresponding branch on GitHub and then you open a pull request to update the **main** branch. The reviewer then reviews the pull request and will answer with a comment (to not allow it), with approval or with request changes. The editor will then actually do the changes in nanodash and finalise the documentation, then merge the pull request (closing the issue) and delete the branches in GitHub and locally.
 
 ### **Pre-requisites**
 
-To collaborate you need a github account and we need to add your account to the FSR team (and GFF organisation) to grant write access to this repository. 
+To collaborate you need a GitHub account and we need to add your account to the FSR team (and GFF organisation) to grant write access to this repository. 
 
 Then you should get git on your computer by downloading git from http://git-scm.com/downloads
 
 ### **G1 A Setup steps**
+
+**Only needed once**
 
 1. Create a folder on your local machine for your github repositories (e.g.: git_repo)
 
@@ -154,20 +156,22 @@ From the folder created above (e.g. git_repo/fsr_qualification)
 
 #### **Select a github issue ->** [**F1 A + B**](#f1-as-editor)
 
-1. Create a new branch for the issue you are working on e.g.: **git checkout -b issue_353_prov**
+1. Create a new branch for the issue you are working on e.g. (for _PROV_ ontology issue 353): **git checkout -b issue_353_prov**
 
-2. Now you can directly open the *FSR_QC.csv* file in Excel (if you have problems, please check these settings
+2. Now you can directly open the *FSR_QC.csv* file in Excel and add a new line for the FSR and add your review only in the first part (annotated in the column headers with '`1.`') by following the instructions in the headers. Save the file and close it.
 
-   [^1]: First you have to make sure that in the system settings for language & region>>related settings>>administrative language setting>> format>>additional settings you have a ‘,’ . Second you need to change the setting in Excel: Go to Options >> Advanced and set a dot (.) as decimal separator.
+   If you have problems to open the CSV directly in Excel, please check these settings: 
 
-   ) and add a new line for the FSR and add your review only in the first part (annotated in the column headers with '1.') by following the instructions in the headers. Save the file and close it.
+   1. First you have to make sure that in the system settings for language & region>>related settings>>administrative language setting>> format>>additional settings you have a ‘`,`’ . 
+   2. Second you need to change the setting in Excel: Go to Options >> Advanced and set a dot (`.`) as decimal separator) 
+
 
 #### **Do the quality check ->** [**F1 C + D**](#f1-as-editor)
 
 1. In the command prompt window you need to use the command: **git status.** You should see the CSV file has been modified.
 2. You now need to stage the change by using the command: **git add FSR_QC.csv**
 3. **git status** should now show you that changes are ready to be committed
-4. Use the command to commit it to your local repository: **git commit -m “text (e.g.added FSR qualification)”**
+4. Use the command to commit it to your local repository: **git commit -m “*message* (e.g. added FSR qualification)”**
 5. To push this to the branch you need to use the command e.g.: **git push --set-upstream origin issue_353_prov**
 6. Go back to your branch on GitHub and click on contribute: **Open pull request**
 
@@ -214,15 +218,15 @@ And create **pull request**
 6. **git status** should show you now that changes should be committed
 7. Then use the command to commit it to your local copy e.g. : **git commit -m “text (disapproved FSR nanopub)”**
 8. To add this commit to the existing Pull Request you need to use the command e.g.: **git push**
-9. **Merge pull reques**t and **confirm merge,** which closes the issue
-10. Delete the branch you created on github 
-11. In the command prompt:**git switch main****
+9. **Merge pull request** and **confirm merge,** which closes the issue
+10. Delete the branch from GitHub 
+11. In the command prompt: **git switch main****
     **(Ensure that you do not have the CSV file open e.g. in Excel)
 12. Use the command: **git pull**
 13. Use the command: **git status** and you should see that you are in origin/main
 14. Use the command: **git branch -d issue_353_prov** to delete the branch locally
 
-Note: While you are waiting for the reviewer to give you feedback for your last pull request you might want to start with a new github issue. In this case you need to make sure to switch to main (11) and make a git pull (12).
+Note: While you are waiting for the reviewer to give you feedback for your last pull request you might want to start with a new GitHub issue. In this case you need to make sure to switch to main (11) and make a git pull (12).
 
 
 
@@ -244,7 +248,8 @@ Note: While you are waiting for the reviewer to give you feedback for your last 
 | diff        | Show changed files                               | When you want to see changes between two files.              | git diff                                                     |
 | merge       | Integrate a development into a single branch     | When you want to incorporate changes from the named commits (since the time their histories diverged from the current branch) into the current branch. | git merge origin/main                                        |
 
-Working with branches in git:
+
+​	Working with branches across GitHub and git:
 
 **![img](images/fig11.png)**
 
