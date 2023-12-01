@@ -1,7 +1,5 @@
 # **GFF Qualification workflow for FAIR Supporting Resources (FSR)**
 
-[TOC]
-
 ## **Introduction**
 
 Please be aware that only qualified FIP (or 3PFF) facilitators or trainers can participate in this process. Please check this [table ](https://docs.google.com/spreadsheets/d/1hLEimbWKdlyouIF4ZoerGG6mia58c98PsVQ8hIT4hqw/edit#gid=0)if your name is already registered. 
@@ -19,7 +17,7 @@ Both work together, as the 2) is included in the 1), documenting the actions in 
 
 **Overall quality-control procedure:**
 
-**![img](https://lh7-us.googleusercontent.com/Wbst8hPCzNDMZ2-z_TYE_BwQHHoUWVVLHtasRtmvfhmhFKXdp-ZBpTEOSgxgag_yGmZeLZCJzZOFoqI9MQ5Pt8IHDBtmCa3DzVRhSN6jmjw1u1-aV5uYVVLoFQT29fXuWDgMQ5K-Mu9nzalcfPNFrMk)**
+**![img](images/fig1.png)**
 
 #### **Github Setup ->** [**G1 A Setup**](#g1-a-setup-steps) 
 
@@ -92,7 +90,7 @@ Make sure to get in contact with the creator of the FSR nanopub before you chang
    4. qualify the FSR nanopub with the[ qualification nanopub template](https://nanodash.petapico.org/publish?12&template=https://w3id.org/np/RAleNxvRsGCSvykP0xhCSmvjS5r9UbvmmyGqEFFtbVdzc)
 
 
-![img](https://lh7-us.googleusercontent.com/OdLdKxfhQR5cQLdBPQFZF_K30vXsbtUvtktzV9LB-2SQKCNyIfRU2wUz5DabD-Yw3ISWQa8WRrJ_KjDnTL3frGpdG_6HzklvSpowrAOuWkeAnAqjssTqOrsIKHWcSzIh00saUEPcX8ptQDA64Ckd82Y)
+![img](images/fig2.png)
 
 **F 3C: When the FSR nanopub should be retracted:**
 
@@ -107,8 +105,7 @@ Make sure to get in contact with the creator of the FSR nanopub before you chang
       2. Delete choice in FIP
       3. Re-publish the FIP
 
-
-**![img](https://lh7-us.googleusercontent.com/m51Tu6edacZ-eimu55n_9zjAxOmYphCusaKYHKjPCqd-DFRjHiO7vXkCiRz9Ke8Q_A6vQaKmqYs7UcneG7VCdbNC4pr9qLVoZmElAbSzu4RmCsntbP1-xkii2cOVSVQe0_8rfwu-hbK-uyiTLnjMzgc)**
+**![img](images/fig3.png)**
 
 #### **Git Document Final Qualification steps ->** [**G1 C**](#g1-c-final-steps-for-the-editor)
 
@@ -128,7 +125,7 @@ Then you should get git on your computer by downloading git from http://git-scm.
 
 1. Now go to the repository on [GitHub](https://github.com/gofair-foundation/fsr_qualification): click on the green Code button and copy the URL 
 
-![img](https://lh7-us.googleusercontent.com/iBiBYOeuDSUBI66YOP3oxsLCiQ7PNI2YFzVu0ugOTiAgYRsqBbcpqwpuWGvWwSFbJ2HrDSp8gJ9kH2poPWApE7LZ2J31tMBKyC96FZ226MolFBsyurOLsJw1y7twR6pHQlDEu7CTv3W_5t8ZJ6DFmfQ)
+![img](images/fig4.png)
 
 1. Open the command prompt window on your computer
 2. To change to the folder you created: you need to use the command*:* **cd [folder]** (e.g. cd git_repo)
@@ -174,13 +171,13 @@ From the folder created above (e.g. git_repo/fsr_qualification)
 5. To push this to the branch you need to use the command e.g.: **git push --set-upstream origin issue_353_prov**
 6. Go back to your branch on GitHub and click on contribute: **Open pull request**
 
-*![Ein Bild, das Text, Schrift, Screenshot enthält.  Automatisch generierte Beschreibung](https://lh7-us.googleusercontent.com/s2xPCMaciIAVdkI-P8H6nlTy14EtacWymy33iePk7uP21TatUOdVip8X4iHHmpGU7m2xDZtn2M3X_ajxSlsDJIOAt-p1UADGKGmff2ehDXEJ0VfWSpPlaHgq3mmDahEUiIPDZRoQQivOBoVAKreveWE)*
+*![img](images/fig5.png)*
 
 1. Add in the description: **resolves #issue** 
    (Number of the issue referring to the FSR you qualified, e.g. resolves #353) 
    This links the Issue to the Pull Request.
 2. Add a reviewer in the gearwear
-   ![Ein Bild, das Text, Schrift, Screenshot, Reihe enthält.  Automatisch generierte Beschreibung](https://lh7-us.googleusercontent.com/Gr12xLedhmnC1QNoiWNIFlt7gy-iZFby7y0oAK2kCOBkitouS3ZnlxwNAocKQbSapqhmW88e3RjPB_Oyf5OMF7-FTJNVo2FGJOaCXbKowCXIk9N4FgbVrcX33fP1CCVrn28HJtO5PIT5q57F9j-V7UU)
+   ![img](images/fig6.png)
 
 And create **pull request**
 
@@ -191,19 +188,19 @@ And create **pull request**
 
 
 
-![img](https://lh7-us.googleusercontent.com/Gh_Hj89rSPTj7WxPaQoAlDyoS-FafCvSjpWJBjT2rjlJyFi3dYeLzu3kqjXMqvno2uZBy9OLZDS6u2FGuZ2QCM58eNZCyW6Ft5uCzgIMrpq_SoA5BxQJrbmzc0zQJrPo6tCPR8S4ryDOEX1-kycMEeo)
+![img](images/fig7.png)
 
-1. Then click on ![img](https://lh7-us.googleusercontent.com/95qLwETAaMCnxIiv94aO9hGH8UwTx-MRRbyUgs2I53Q8WAjsCzBBJxyVRK_1fsc6rhaNJ8JOpcKOq2BJtQYI2e_seMAkn-jWOeCMr2mCbjoAnSG7ODYkvsYvpTRspT-8v_qEolanP06UPtjI1nWu9XI) to load the preview.
+1. Then click on ![img](images/fig8.png) to load the preview.
 2. The spreadsheet preview can be filtered if preferred by using the FSR name or NanoPub URI, e.g.:
 
-![img](https://lh7-us.googleusercontent.com/NYrGCiqiM-Mv6IGuqh3w7HRji_se8tegbQ9Q-qQy3w4YoVteFP7rUFqXkQpRsPqrOv4TLUPb4T2tqeM7QEnVM2iUj8iM2FmCHZGXfz5mPtbJuGeUysLoSFeekfvMbtH87U5uv0YdYMijwXPLFFTeLdY)
+![img](images/fig9.png)
 
 #### **Reviewer check ->** [**F2**](https://docs.google.com/document/d/1Q0LX-5UAALDbSgLlvUvmI06ukdqHixVYO5b-9QEeFMo/edit#heading=h.zdtmx0y9xun7)
 
 1. Review the new entry in the spreadsheet preview, this includes all columns that are named with “1. “ (at this point the “2. “ columns should be empty).
 2. Make your decision on whether you approve, or request changes (or comment if you need further information or have a different opinion on the course of action).
 
-**![img](https://lh7-us.googleusercontent.com/6OI2c-qsTeh2pcB5N0NloA4Q1smLV9dzo2Rqq0KOlh5b-YaV_d3ZVG_bhokFu9g1r4yCcwQ_NSyHxbcWe7brv5FF-WwqXvXpqBr16JHlhObqIbmPjuR7Ww1tC-pCVFP_UpcuAAesJPxci5n6XXyCnLk)**
+**![img](images/fig10.png)**
 
 ### **G1 C Final steps for the Editor**
 
@@ -249,9 +246,9 @@ Note: While you are waiting for the reviewer to give you feedback for your last 
 
 Working with branches in git:
 
-**![img](https://lh7-us.googleusercontent.com/f5Cx-TGT4SHZ8KNchP-q8yIdiRsWqriz0O-psOXA2w2SrrtDryejetXvotp2Dafh8aG-Ahq7Zt3TWbOSUPWhN_vvNIE_levll7LW9KO6W7AmefNVR4MHXwcrEtb_Q7aaZ_rkK03L8BfChWyYNFALUmc)**
+**![img](images/fig11.png)**
 
-This illustrates the need to set the upstream for `Branch_issue5` when pushing the commits from that branch.
+This illustrates creating the upstream branch on GitHub for the `issue342` branch when first pushing the commits from that branch.
 
 
 
@@ -269,4 +266,4 @@ The action is currently unscheduled, to run it manually (e.g. after a FIP worksh
 
 ![img](https://lh7-us.googleusercontent.com/Q_NwXiTJrHJJVxnCim_C3n1b1SMExJ-qSa153Luu14p_lHD3JYveAHBmly020Y6gx8a-N7PWiawq0bY2gzDovBxV5LuCHYmdLo8UqhuwAmBCfOc_GAXBteiTosOXozfxZq8yGvE2gGzEUBzGzXzBmLo)
 
-![img](https://lh7-us.googleusercontent.com/Mni4rDI7AxLCDBoU-Frzn1Q3uTXZlxF-14VufHMhC056JjY7R-9qfYFlaWKEUtvs14V4vzLi_PVCU4_Eope-mo8Dk1XWwQfesGCRmJU2CHVDhDOHC_qXTij4PVVBHKSfpQK_HzJR48VRMn57rhACnzQ)
+![img](images/fig13.png)
