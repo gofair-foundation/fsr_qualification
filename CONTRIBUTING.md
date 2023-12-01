@@ -262,7 +262,7 @@ This illustrates creating the upstream branch on GitHub for the `issue342` branc
 The GitHub issues list is populated from NanoDash by a custom GitHub [action](https://github.com/gofair-foundation/fsr_qualification/actions/workflows/issue.yml). 
 This will create issues for new unqualified FSRs and close any open issues for FSRs that are no longer unqualified.
 
-The action is currently unscheduled, to run it manually (e.g. after a FIP workshop): 
+The action is currently scheduled to run at 04:30 UTC on Sundays; to trigger it manually (e.g. after a FIP workshop): 
 
 1. Go to the ‘Actions’ tab (red box)
 2. Click on ‘issue_creation’ (blue box) 
