@@ -1,7 +1,9 @@
 name: issue_creation
 
 on:
-  workflow_dispatch
+  schedule:
+    - cron: '30 4 * * SUN'
+  workflow_dispatch:
     
 jobs:
   issue_job:
