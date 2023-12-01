@@ -238,7 +238,7 @@ Note: While you are waiting for the reviewer to give you feedback for your last 
 | checkout    | Switch to a new branch                           | When you want to add a new line in the CSV, you create a new branch of main. | git checkout -b issue_353_prov                               |
 | add         | *Stage* a changed file                           | When you stage a file in Git, you instruct Git to track changes to the file in preparation for a commit. | git add FSR_QC.csv                                           |
 | commit      | Record changes to the repository                 | When you want to capture the state of a project at that point in time. | git commit -m “New row for PROV (issue 353)”                 |
-| push        | Transfer commits                                 | When you want to upload local repository content to a remote repository. Second example also creates the new branch on GitHub. | git push  git push –set-upstream origin issue_353_prov       |
+| push        | Transfer commits                                 | When you want to upload local repository content to a remote repository. Second example also creates the new branch on GitHub. | git push <br/> git push –set-upstream origin issue_353_prov       |
 | switch      | Change to a specific branch                      | When you want to change to a specific branch                 | git switch main                                              |
 | branch      | List, create, or delete branches                 | To delete an old branch for a closed issue.                  | git branch -d issue_353_prov                                 |
 | diff        | Show changed files                               | When you want to see changes between two files.              | git diff                                                     |
@@ -264,6 +264,6 @@ The action is currently unscheduled, to run it manually (e.g. after a FIP worksh
 3. Click on ‘Run workflow’ (green box)
 4. Click on the ‘Run workflow’ green button (orange box)
 
-![img](https://lh7-us.googleusercontent.com/Q_NwXiTJrHJJVxnCim_C3n1b1SMExJ-qSa153Luu14p_lHD3JYveAHBmly020Y6gx8a-N7PWiawq0bY2gzDovBxV5LuCHYmdLo8UqhuwAmBCfOc_GAXBteiTosOXozfxZq8yGvE2gGzEUBzGzXzBmLo)
+![img](images/fig12.png)
 
 ![img](images/fig13.png)
