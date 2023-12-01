@@ -218,7 +218,8 @@ And create **pull request**
 6. **git status** should show you now that changes should be committed
 7. Then use the command to commit it to your local copy e.g. : **git commit -m “text (disapproved FSR nanopub)”**
 8. To add this commit to the existing Pull Request you need to use the command e.g.: **git push**
-9. **Merge pull request** and **confirm merge,** which closes the issue
+9. **Merge pull request** and **confirm merge,** which closes the issue.
+   If there are merge conflicts, caused by another PR being merged into main, please see [Appendix C](#appendix-c-resolving-merge-conflicts) for guidance on how to fix this using the GitHub web editor. Once the conflicts are resolved, the PR can then be merged.
 10. Delete the branch from GitHub 
 11. In the command prompt: **git switch main****
     **(Ensure that you do not have the CSV file open e.g. in Excel)
@@ -272,3 +273,29 @@ The action is currently scheduled to run at 04:30 UTC on Sundays; to trigger it 
 ![img](images/fig12.png)
 
 ![img](images/fig13.png)
+
+# Appendix C: Resolving merge conflicts
+As we may have many people making edits to the CSV file, it is inevitable at times that git will detect a merge conflict. 
+
+![fig14](images/fig14.png)
+
+Luckily, as our changes are separate records on separate lines it is easy to resolve in the 'web editor'.
+
+![fig15](images/fig15.png)
+
+Here, git has detected that our branch has added the record for issue 163 on the line after issue 158 (line 5).
+However, issue 108 was also added on the line after issue 158 in another branch that has already been merged to *main*. 
+
+Therefore our branch is in **conflict** with *main*.
+
+In this simple case, because they are referring to separate records, we can merge them by removing the 3 mark up lines, e.g.:
+
+* Line 6:  `<<<<<<< issue_163_NP_schema`
+* Line 8:  `=======`
+* Line 10: `>>>>>>> main`
+
+
+
+Once this is done, we can click on 'Mark as resolved' and then click on the green 'Commit merge' button.
+
+![fig16](images/fig16.png)
