@@ -119,6 +119,8 @@ To collaborate you need a GitHub account and we need to add your account to the 
 
 Then you should get git on your computer by downloading git from http://git-scm.com/downloads
 
+The [Pro Git book](https://git-scm.com/book/en/v2) is a really useful reference.
+
 ### **G1 A Setup steps**
 
 **Only needed once**
