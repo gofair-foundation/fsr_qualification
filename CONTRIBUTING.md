@@ -23,8 +23,8 @@ Both work together, as the 2) is included in the 1), documenting the actions in 
 
 ### **F1 As Editor**
 
-A. Choose an issue from GitHub: https://github.com/gofair-foundation/fsr_qualification/issues - these issues are created by a [GitHub action](#appendix-b-refreshing-the-github-issues-list) which looks for unqualified FSRs in Nanodash.
-   These can be filtered by label (FSR type) from https://github.com/gofair-foundation/fsr_qualification/labels 
+A. Choose an issue from GitHub: https://github.com/gofair-foundation/fsr_qualification/issues - these issues are created by a [GitHub action](#appendix-b-refreshing-the-github-issues-list) which looks for unqualified FSRs in Nanodash.  
+   These can be filtered by label (FSR type) from https://github.com/gofair-foundation/fsr_qualification/labels  
    Assign it to you (so that everybody can see that you are working on it)
 
 B. Check for duplicates
@@ -58,8 +58,8 @@ D. Propose action:
 
 and decides either to:
 
-A. accept the proposal,
-B. accept the proposal with some required changes or to
+A. accept the proposal  
+B. accept the proposal with some required changes  
 C. reject the proposal
 
 #### **Git Document Review ->** [**G2 A**](#g2-a-steps-for-the-reviewer)
@@ -69,11 +69,10 @@ C. reject the proposal
 - if the proposal is accepted with changes, the editor negotiates with the reviewer and makes adjustments until both are satisfied;
 - if the reviewer accepts the proposal: the editor proceeds with the proposed action:
 
-A. proposal - accept as is: qualify the FSR nanopub with the[ qualification nanopub template](https://nanodash.petapico.org/publish?12&template=https://w3id.org/np/RAleNxvRsGCSvykP0xhCSmvjS5r9UbvmmyGqEFFtbVdzc) 
-B. proposal - accept with improvements: proceed with the improvement (see below)
-C. proposal - reject: disapprove/retract the nanopub (see below).
-
-D. If the reviewer rejects your proposal, get another opinion. Follow the decision that has at least two supporters;
+A. proposal - accept as is: qualify the FSR nanopub with the[ qualification nanopub template](https://nanodash.petapico.org/publish?12&template=https://w3id.org/np/RAleNxvRsGCSvykP0xhCSmvjS5r9UbvmmyGqEFFtbVdzc)  
+B. proposal - accept with improvements: proceed with the improvement (see below)  
+C. proposal - reject: disapprove/retract the nanopub (see below).  
+D. If the reviewer rejects your proposal, get another opinion. Follow the decision that has at least two supporters.
 
 **F 3B: Proposal accept with improvements:**
 
@@ -119,6 +118,8 @@ To collaborate you need a GitHub account and we need to add your account to the 
 
 Then you should get git on your computer by downloading git from http://git-scm.com/downloads
 
+The [Pro Git book](https://git-scm.com/book/en/v2) is a really useful reference.
+
 ### **G1 A Setup steps**
 
 **Only needed once**
@@ -130,11 +131,11 @@ Then you should get git on your computer by downloading git from http://git-scm.
 ![img](images/fig4.png)
 
 1. Open the command prompt window on your computer
-2. To change to the folder you created: you need to use the command*:* **cd [folder]** (e.g. cd git_repo)
+2. To change to the folder you created: you need to use the command: **cd [folder]** (e.g. cd git_repo)
 3. To configure your personal settings on git (needed only once) you use the command: 
    **git config --global user.name "username"**
    **git config --global user.email "email@address"**
-4. To create a working copy on your computer you need to use the command*:* **git clone** **[github repo URI]** 
+4. To create a working copy on your computer you need to use the command: **git clone** **[github repo URI]** 
    (i.e. `git clone https://github.com/gofair-foundation/fsr_qualification.git`)
 5. Then go to the folder that has been cloned on your computer: **cd [folder]** (e.g. cd fsr_qualification)
 
@@ -218,10 +219,11 @@ And create **pull request**
 6. **git status** should show you now that changes should be committed
 7. Then use the command to commit it to your local copy e.g. : **git commit -m “text (disapproved FSR nanopub)”**
 8. To add this commit to the existing Pull Request you need to use the command e.g.: **git push**
-9. **Merge pull request** and **confirm merge,** which closes the issue
+9. **Merge pull request** and **confirm merge,** which closes the issue.
+   If there are merge conflicts, caused by another PR being merged into main, please see [Appendix C](#appendix-c-resolving-merge-conflicts) for guidance on how to fix this using the GitHub web editor. Once the conflicts are resolved, the PR can then be merged.
 10. Delete the branch from GitHub 
-11. In the command prompt: **git switch main****
-    **(Ensure that you do not have the CSV file open e.g. in Excel)
+11. In the command prompt: **git switch main**  
+    (Ensure that you do not have the CSV file open e.g. in Excel)
 12. Use the command: **git pull**
 13. Use the command: **git status** and you should see that you are in origin/main
 14. Use the command: **git branch -d issue_353_prov** to delete the branch locally
@@ -272,3 +274,28 @@ The action is currently scheduled to run at 04:30 UTC on Sundays; to trigger it 
 ![img](images/fig12.png)
 
 ![img](images/fig13.png)
+
+# Appendix C: Resolving merge conflicts
+As we may have many people making edits to the CSV file, it is inevitable at times that git will detect a merge conflict. 
+
+![fig14](images/fig14.png)
+
+Luckily, as our changes are separate records on separate lines it is easy to resolve in the 'web editor'.
+
+![fig15](images/fig15.png)
+
+Here, git has detected that our branch has added the record for issue 163 on the line after issue 158 (line 5).
+However, issue 108 was also added on the line after issue 158 in another branch that has already been merged to *main*. 
+
+Therefore our branch is in **conflict** with *main*.
+
+In this simple case, because they are referring to separate records, we can merge them by removing the 3 mark up lines, e.g.:
+
+* Line 6:  `<<<<<<< issue_163_NP_schema`
+* Line 8:  `=======`
+* Line 10: `>>>>>>> main`
+
+
+Once this is done, we can click on 'Mark as resolved' (please ensure that you are not *duplicating* any records) and then click on the green 'Commit merge' button.
+
+![fig16](images/fig16.png)
