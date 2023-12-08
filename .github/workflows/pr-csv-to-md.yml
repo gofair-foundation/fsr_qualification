@@ -1,0 +1,31 @@
+name: pr_csv_to_md_table
+
+on:
+  pull_request:
+    paths:
+      - './FSR_QC.csv'
+
+jobs:
+  build:
+    name: Comment CSV as Pull-request Table
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@master
+      - name: Read CSV
+        id: csv
+        uses: juliangruber/read-file-action@v1
+        with:
+          path: ./FSR_QC.csv
+      - name: Create MD
+        uses: petems/csv-to-md-table-action@master
+        id: csv-table-output
+        with:
+          csvinput: ${{ steps.csv.outputs.content }}
+      - uses: mshick/add-pr-comment@v1
+        with:
+          message: |
+            ${{steps.csv-table-output.outputs.markdown-table}}
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          repo-token-user-login: 'github-actions[bot]' # The user.login for temporary GitHub tokens
+          allow-repeats: true
