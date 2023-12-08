@@ -3,7 +3,7 @@ name: pr_csv_to_md_table
 on:
   pull_request:
     paths:
-      - 'FSR_QC.csv'
+      - './FSR_QC.csv'
 
 jobs:
   build:
@@ -16,7 +16,7 @@ jobs:
         id: csv
         uses: juliangruber/read-file-action@v1
         with:
-          path: ./people.csv
+          path: ./FSR_QC.csv
       - name: Create MD
         uses: petems/csv-to-md-table-action@master
         id: csv-table-output
