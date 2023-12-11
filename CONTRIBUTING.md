@@ -90,7 +90,7 @@ Make sure to get in contact with the creator of the FSR nanopub before you chang
    5. qualify the FSR nanopub with the[ qualification nanopub template](https://nanodash.petapico.org/publish?12&template=https://w3id.org/np/RAleNxvRsGCSvykP0xhCSmvjS5r9UbvmmyGqEFFtbVdzc)
 
 
-![img](images/fig2a.png)
+![img](images/fig2.png)
 
 **F 3C: When the FSR nanopub should be retracted:**
 
