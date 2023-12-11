@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Create issues
-        uses: gofair-foundation/qualification-issue-creation-action@v0.6
+        uses: gofair-foundation/qualification-issue-creation-action@v0.7
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         

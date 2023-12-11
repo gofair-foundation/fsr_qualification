@@ -80,13 +80,14 @@ Make sure to get in contact with the creator of the FSR nanopub before you chang
 
 1. If the creator is the FIP Wizard 
    1. find the project, improve the metadata and publish a new nanopub
-   2. qualify the FSR nanopub with the[ qualification nanopub template](https://nanodash.petapico.org/publish?12&template=https://w3id.org/np/RAleNxvRsGCSvykP0xhCSmvjS5r9UbvmmyGqEFFtbVdzc)
+   2. qualify the FSR nanopub with the [qualification nanopub template](https://nanodash.petapico.org/publish?12&template=https://w3id.org/np/RAleNxvRsGCSvykP0xhCSmvjS5r9UbvmmyGqEFFtbVdzc)
 
 2. If the creator is documented via an ORCID (then you have to work with nanodash)
    1. search for the nanopub-URI in the search of nanodash
    2. update as derived nanopublication, copy the URI of the subject in the original FSR nanopub into the short name, improve metadata and publish it
-   3. in case you want to use a new template use this procedure: https://nanodash.petapico.org/publish?template=nanopubtemplateURI[&supersede=](https://w3id.org/np/RAFOJOtZQZ1dOJYAiuBf8ZZH65we0xlHWTk8G1ZFAgA68&supersede=[http://purl.org/np/RAklLUvO0mexDQmB5BRgBuRtam811bDTvGKmV0dIrWQy8)oldNanopubURI and copy the URI of the subject in the original FSR nanopub into the short name, improve metadata and publish it
-   4. qualify the FSR nanopub with the[ qualification nanopub template](https://nanodash.petapico.org/publish?12&template=https://w3id.org/np/RAleNxvRsGCSvykP0xhCSmvjS5r9UbvmmyGqEFFtbVdzc)
+   3. in case you want to use a new template use this procedure: https://nanodash.petapico.org/publish?template=*newTemplateURI*&supersede=*oldNanopubURI* and copy the URI of the subject in the original FSR nanopub into the short name, improve metadata and publish it
+   4. disapprove the old nanopub that has been superseeded with the nanopub with improved metadata
+   5. qualify the FSR nanopub with the [qualification nanopub template](https://nanodash.petapico.org/publish?12&template=https://w3id.org/np/RAleNxvRsGCSvykP0xhCSmvjS5r9UbvmmyGqEFFtbVdzc)
 
 
 ![img](images/fig2.png)
@@ -95,7 +96,7 @@ Make sure to get in contact with the creator of the FSR nanopub before you chang
 
 1. Check who is the creator: 
    1. If the creator is the FIP Wizard create a project with the Nanopublication Retraction template (under Custom templates) and follow the instructions to retract a FSR
-   2. If the creator is documented with an ORCID (then you have to work with nanodash) use [this nanopub template](https://nanodash.petapico.org/publish?14&template=http://purl.org/np/RAgXKeS8wLficVpkOIbU2aF5O5Zuy7KZ_3gNUr7D5BS8c) to disapprove the nanopub (keep in mind only ORCIDs of qualified facilitators will have an impact on the FIP Wizard filters)
+   2. If the creator is documented with an ORCID (then you have to work with nanodash) use [this nanopub template](https://nanodash.petapico.org/publish?14&template=http://purl.org/np/RAgXKeS8wLficVpkOIbU2aF5O5Zuy7KZ_3gNUr7D5BS8c) to disapprove the nanopub (keep in mind only ORCIDs of qualified facilitators will have an impact on the FIP Wizard filters). **Ensure that you use the** `http://purl.org/np/` **URI and not the** `https://np.petapico.org/` **URI.** 
 
 2. Check if same thing is described by another nanopub:
    1. If the same thing has been updated by a newer FSR nanopub (Option A), all is done
