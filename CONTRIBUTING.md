@@ -85,8 +85,9 @@ Make sure to get in contact with the creator of the FSR nanopub before you chang
 2. If the creator is documented via an ORCID (then you have to work with nanodash)
    1. search for the nanopub-URI in the search of nanodash
    2. update as derived nanopublication, copy the URI of the subject in the original FSR nanopub into the short name, improve metadata and publish it
-   3. in case you want to use a new template use this procedure: https://nanodash.petapico.org/publish?template=nanopubtemplateURI[&supersede=](https://w3id.org/np/RAFOJOtZQZ1dOJYAiuBf8ZZH65we0xlHWTk8G1ZFAgA68&supersede=[http://purl.org/np/RAklLUvO0mexDQmB5BRgBuRtam811bDTvGKmV0dIrWQy8)oldNanopubURI and copy the URI of the subject in the original FSR nanopub into the short name, improve metadata and publish it
-   4. qualify the FSR nanopub with the[ qualification nanopub template](https://nanodash.petapico.org/publish?12&template=https://w3id.org/np/RAleNxvRsGCSvykP0xhCSmvjS5r9UbvmmyGqEFFtbVdzc)
+   3. in case you want to use a new template use this procedure: https://nanodash.petapico.org/publish?template=*newTemplateURI*&supersede=*oldNanopubURI* and copy the URI of the subject in the original FSR nanopub into the short name, improve metadata and publish it
+   4. disapprove the old nanopub that has been superseeded with the nanopub with improved metadata
+   5. qualify the FSR nanopub with the[ qualification nanopub template](https://nanodash.petapico.org/publish?12&template=https://w3id.org/np/RAleNxvRsGCSvykP0xhCSmvjS5r9UbvmmyGqEFFtbVdzc)
 
 
 ![img](images/fig2.png)
