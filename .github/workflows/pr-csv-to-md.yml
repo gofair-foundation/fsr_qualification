@@ -3,7 +3,7 @@ name: pr_csv_to_md_table
 on:
   pull_request:
     paths:
-      - './FSR_QC.csv'
+      - 'FSR_QC.csv'
 
 jobs:
   build:
@@ -11,20 +11,25 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@master
+        uses: actions/checkout@v4
       - name: Read CSV
         id: csv
-        uses: juliangruber/read-file-action@v1
-        with:
-          path: ./FSR_QC.csv
+        run: |
+          { 
+            echo 'text<<EOF'
+            head -1 FSR_QC.csv
+            tail -5 FSR_QC.csv
+            echo EOF
+          } >> $GITHUB_OUTPUT
       - name: Create MD
-        uses: petems/csv-to-md-table-action@master
+        uses: petems/csv-to-md-table-action@v3.0.0
         id: csv-table-output
         with:
-          csvinput: ${{ steps.csv.outputs.content }}
+          csvinput: ${{ steps.csv.outputs.text }}
       - uses: mshick/add-pr-comment@v1
         with:
           message: |
+            Here are the last 5 lines of FSR_QC.csv:
             ${{steps.csv-table-output.outputs.markdown-table}}
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           repo-token-user-login: 'github-actions[bot]' # The user.login for temporary GitHub tokens
