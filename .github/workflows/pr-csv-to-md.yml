@@ -15,10 +15,15 @@ jobs:
       - name: Read CSV
         id: csv
         run: |
+          git fetch origin $GITHUB_BASE_REF --depth=1
           { 
             echo 'text<<EOF'
+            echo -n ','
             head -1 FSR_QC.csv
-            tail -5 FSR_QC.csv
+            git diff origin/$GITHUB_BASE_REF $GITHUB_SHA -U0 -- FSR_QC.csv \
+              | grep '^[+-][^+-]' \
+              | sed 's/|/\\|/g' \
+              | sed 's/^[+-]/&,/'
             echo EOF
           } >> $GITHUB_OUTPUT
       - name: Create MD
@@ -29,7 +34,7 @@ jobs:
       - uses: mshick/add-pr-comment@v1
         with:
           message: |
-            Here are the last 5 lines of FSR_QC.csv:
+            Here are the changes in FSR_QC.csv:
             ${{steps.csv-table-output.outputs.markdown-table}}
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           repo-token-user-login: 'github-actions[bot]' # The user.login for temporary GitHub tokens
