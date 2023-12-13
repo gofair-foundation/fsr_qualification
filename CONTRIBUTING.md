@@ -69,7 +69,7 @@ C. reject the proposal
 - if the proposal is accepted with changes, the editor negotiates with the reviewer and makes adjustments until both are satisfied;
 - if the reviewer accepts the proposal: the editor proceeds with the proposed action:
 
-A. proposal - accept as is: qualify the FSR nanopub with the[ qualification nanopub template](https://nanodash.petapico.org/publish?12&template=https://w3id.org/np/RAleNxvRsGCSvykP0xhCSmvjS5r9UbvmmyGqEFFtbVdzc)  
+A. proposal - accept as is: qualify the FSR nanopub with the [qualification nanopub template](https://nanodash.petapico.org/publish?55&template=https://w3id.org/np/RApEyTXPOt_h81Ao0WpzRhigcgvqrbnNBCo8fEpsZ6CxU)  
 B. proposal - accept with improvements: proceed with the improvement (see below)  
 C. proposal - reject: disapprove/retract the nanopub (see below).  
 D. If the reviewer rejects your proposal, get another opinion. Follow the decision that has at least two supporters.
@@ -80,14 +80,14 @@ Make sure to get in contact with the creator of the FSR nanopub before you chang
 
 1. If the creator is the FIP Wizard 
    1. find the project, improve the metadata and publish a new nanopub
-   2. qualify the FSR nanopub with the [qualification nanopub template](https://nanodash.petapico.org/publish?12&template=https://w3id.org/np/RAleNxvRsGCSvykP0xhCSmvjS5r9UbvmmyGqEFFtbVdzc)
+   2. qualify the FSR nanopub with the [qualification nanopub template](https://nanodash.petapico.org/publish?55&template=https://w3id.org/np/RApEyTXPOt_h81Ao0WpzRhigcgvqrbnNBCo8fEpsZ6CxU)
 
 2. If the creator is documented via an ORCID (then you have to work with nanodash)
    1. search for the nanopub-URI in the search of nanodash
    2. update as derived nanopublication, copy the URI of the subject in the original FSR nanopub into the short name, improve metadata and publish it
    3. in case you want to use a new template use this procedure: https://nanodash.petapico.org/publish?template=*newTemplateURI*&supersede=*oldNanopubURI* and copy the URI of the subject in the original FSR nanopub into the short name, improve metadata and publish it
    4. disapprove the old nanopub that has been superseeded with the nanopub with improved metadata
-   5. qualify the FSR nanopub with the [qualification nanopub template](https://nanodash.petapico.org/publish?12&template=https://w3id.org/np/RAleNxvRsGCSvykP0xhCSmvjS5r9UbvmmyGqEFFtbVdzc)
+   5. qualify the FSR nanopub with the [qualification nanopub template](https://nanodash.petapico.org/publish?55&template=https://w3id.org/np/RApEyTXPOt_h81Ao0WpzRhigcgvqrbnNBCo8fEpsZ6CxU)
 
 
 ![img](images/fig2.png)
