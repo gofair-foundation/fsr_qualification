@@ -189,24 +189,36 @@ And create **pull request**
 
 ### **G2 A Steps for the Reviewer**
 
-1. You will have gotten an email alert for the pull request
-2. From the pull request page, visit the branch to preview the CSV file. First, click on the branch name:
+You will have gotten an email alert for the pull request, you can now view the proposed changes in two ways:
 
+**From the diff that will be commented in the pull request by a Github Action**
 
+If the pull request contains changes to `FSR_QC.csv` a Github Action will run that will comment the changes to the pull request:
 
-![img](images/fig7.png)
+![gha_csv_diff_md](images/gha_csv_diff_md.png)
+
+Note that it can take a short time for this Github Action to complete. New lines have `+` in the first column, changes to lines show up as a `-` line which contains the 'old' line, and a `+` line which contains the updated line.
+
+If the Github Action fails (e.g., if the csv file is malformed), or the table is illegible, use the alternative method described below.
+
+**From the branch that contains the changes**
+
+1. From the pull request page, visit the branch to preview the CSV file. First, click on the branch name (`issue_353_prov` in this case): ![img](images/fig7.png)
 
 1. Then click on ![img](images/fig8.png) to load the preview.
 2. The spreadsheet preview can be filtered if preferred by using the FSR name or NanoPub URI, e.g.:
 
-![img](images/fig9.png)
+    ![img](images/fig9.png)
 
 #### **Reviewer check ->** [**F2**](https://docs.google.com/document/d/1Q0LX-5UAALDbSgLlvUvmI06ukdqHixVYO5b-9QEeFMo/edit#heading=h.zdtmx0y9xun7)
 
-1. Review the new entry in the spreadsheet preview, this includes all columns that are named with “1. “ (at this point the “2. “ columns should be empty).
-2. Make your decision on whether you approve, or request changes (or comment if you need further information or have a different opinion on the course of action).
-
-**![img](images/fig10.png)**
+1. Review the new entry from the Github Action comment or  the spreadsheet preview, this includes all columns that are named with `1. ` (at this point the `2. ` columns should be empty).
+2. Make your decision on whether you **Approve**, or **Request changes** (or **Comment** if you need further information or have a different opinion on the course of action). To do this
+   * Go back to the pull request, and then to the **Files changed** tab,
+   * On the right check the "Viewed" checkbox for the `FSR_QC.csv` file: 
+   ![gh_files_changed_review](images/gh_files_changed_review.png)
+   * Then click the green **Review changes** button to finish your review, and communicate your decision to the editor: 
+   ![img](images/fig10.png)
 
 ### **G1 C Final steps for the Editor**
 
