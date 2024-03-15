@@ -74,7 +74,7 @@ B. proposal - accept with improvements: proceed with the improvement (see below)
 C. proposal - reject: disapprove/retract the nanopub (see below).  
 D. If the reviewer rejects your proposal, get another opinion. Follow the decision that has at least two supporters.
 
-**F 3B: Proposal accept with improvements:**
+#### **F 3B: Proposal accept with improvements:**
 
 Make sure to get in contact with the creator of the FSR nanopub before you change the metadata. If you can’t get any response write an email to the creator with your intended change or, in case you don’t have the email, inform about the change in a comment directly in the FIP Wizard FSR project. 
 
@@ -92,7 +92,7 @@ Make sure to get in contact with the creator of the FSR nanopub before you chang
 
 ![img](images/fig2.png)
 
-**F 3C When the FSR nanopub should be retracted**
+#### **F 3C When the FSR nanopub should be retracted**
 
 1. Check who is the creator: 
    1. If the creator is the FIP Wizard create a project with the Nanopublication Retraction template (under Custom templates) and follow the instructions to retract a FSR
