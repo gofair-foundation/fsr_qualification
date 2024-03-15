@@ -30,7 +30,7 @@ A. Choose an issue from GitHub: https://github.com/gofair-foundation/fsr_qualifi
 B. Check for duplicates
 
 1. Use the API: [check duplicates](https://peta-pico.github.io/tapas/tapas.html?api=peta-pico/dsw-nanopub-api&op=/find_gofair_qualified_things_x) by searching with the most common name (and similar names) of the FSR if there exists more than one nanopub.
-2. Goal is to keep only the most informative nanopub, possibly the latest one.
+2. The goal is to keep only the most informative nanopub, possibly the latest one. Duplicates will need to retracted/disapproved (see [F3C](#f-3c-when-the-fsr-nanopub-should-be-retracted)) and any accompanying GitHub issues closed accordingly.
 
 #### **Git Document Quality Check ->** [**G1 B**](#g1-b-steps-for-the-editor-to-document-the-quality-check)
 
@@ -69,7 +69,7 @@ C. reject the proposal
 - if the proposal is accepted with changes, the editor negotiates with the reviewer and makes adjustments until both are satisfied;
 - if the reviewer accepts the proposal: the editor proceeds with the proposed action:
 
-A. proposal - accept as is: qualify the FSR nanopub with the [qualification nanopub template](https://nanodash.petapico.org/publish?55&template=https://w3id.org/np/RApEyTXPOt_h81Ao0WpzRhigcgvqrbnNBCo8fEpsZ6CxU)  
+A. proposal - accept as is: qualify the FSR nanopub with the [qualification nanopub template](https://nanodash.knowledgepixels.com/publish?55&template=https://w3id.org/np/RApEyTXPOt_h81Ao0WpzRhigcgvqrbnNBCo8fEpsZ6CxU)  
 B. proposal - accept with improvements: proceed with the improvement (see below)  
 C. proposal - reject: disapprove/retract the nanopub (see below).  
 D. If the reviewer rejects your proposal, get another opinion. Follow the decision that has at least two supporters.
@@ -80,23 +80,23 @@ Make sure to get in contact with the creator of the FSR nanopub before you chang
 
 1. If the creator is the FIP Wizard 
    1. find the project, improve the metadata and publish a new nanopub
-   2. qualify the FSR nanopub with the [qualification nanopub template](https://nanodash.petapico.org/publish?55&template=https://w3id.org/np/RApEyTXPOt_h81Ao0WpzRhigcgvqrbnNBCo8fEpsZ6CxU)
+   2. qualify the FSR nanopub with the [qualification nanopub template](https://nanodash.knowledgepixels.com/publish?55&template=https://w3id.org/np/RApEyTXPOt_h81Ao0WpzRhigcgvqrbnNBCo8fEpsZ6CxU)
 
 2. If the creator is documented via an ORCID (then you have to work with nanodash)
    1. search for the nanopub-URI in the search of nanodash
    2. update as derived nanopublication, copy the URI of the subject in the original FSR nanopub into the short name, improve metadata and publish it
-   3. in case you want to use a new template use this procedure: https://nanodash.petapico.org/publish?template=*newTemplateURI*&supersede=*oldNanopubURI* and copy the URI of the subject in the original FSR nanopub into the short name, improve metadata and publish it
+   3. in case you want to use a new template use this procedure: https://nanodash.knowledgepixels.com/publish?template=*newTemplateURI*&supersede=*oldNanopubURI* and copy the URI of the subject in the original FSR nanopub into the short name, improve metadata and publish it
    4. disapprove the old nanopub that has been superseeded with the nanopub with improved metadata
-   5. qualify the FSR nanopub with the [qualification nanopub template](https://nanodash.petapico.org/publish?55&template=https://w3id.org/np/RApEyTXPOt_h81Ao0WpzRhigcgvqrbnNBCo8fEpsZ6CxU)
+   5. qualify the FSR nanopub with the [qualification nanopub template](https://nanodash.knowledgepixels.com/publish?55&template=https://w3id.org/np/RApEyTXPOt_h81Ao0WpzRhigcgvqrbnNBCo8fEpsZ6CxU)
 
 
 ![img](images/fig2.png)
 
-**F 3C: When the FSR nanopub should be retracted:**
+**F 3C When the FSR nanopub should be retracted**
 
 1. Check who is the creator: 
    1. If the creator is the FIP Wizard create a project with the Nanopublication Retraction template (under Custom templates) and follow the instructions to retract a FSR
-   2. If the creator is documented with an ORCID (then you have to work with nanodash) use [this nanopub template](https://nanodash.petapico.org/publish?14&template=http://purl.org/np/RAgXKeS8wLficVpkOIbU2aF5O5Zuy7KZ_3gNUr7D5BS8c) to disapprove the nanopub (keep in mind only ORCIDs of qualified facilitators will have an impact on the FIP Wizard filters). **Ensure that you use the** `http://purl.org/np/` (or `http://w3id.org/np/`) **URI and not the** `https://np.petapico.org/` **URI.** 
+   2. If the creator is documented with an ORCID (then you have to work with nanodash) use [this nanopub template](https://nanodash.knowledgepixels.com/publish?14&template=http://purl.org/np/RAgXKeS8wLficVpkOIbU2aF5O5Zuy7KZ_3gNUr7D5BS8c) to disapprove the nanopub (keep in mind only ORCIDs of qualified facilitators will have an impact on the FIP Wizard filters). **Ensure that you use the** `http://purl.org/np/` (or `http://w3id.org/np/`) **URI and not the** `https://np.knowledgepixels.com/` **URI.** 
 
 2. Check if same thing is described by another nanopub:
    1. If the same thing has been updated by a newer FSR nanopub (Option A), all is done
