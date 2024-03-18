@@ -15,7 +15,7 @@ jobs:
           sparse-checkout: |
             .github
       - name: Create issues
-        uses: gofair-foundation/qualification-issue-creation-action@v0.8
+        uses: gofair-foundation/qualification-issue-creation-action@v0.8.1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
