@@ -42,6 +42,8 @@ C. Perform Quality check:
 
 3. check if the links provided are working
 
+   - If the FSR was created in the FIP/SIP wizard check if the `prov:wasDerivedFrom` in the pubinfo resolves to the correct FSR project (see https://github.com/fip-wizard/fip-wizard/issues/1)
+
 4. check if the resource is described in FAIRsharing and if there exists a PID. If so, then check if the nanopub refers to it or if it needs to be added. Otherwise, skip it - FAIRsharing has only a few types included, so no problem if you can’t find it.
 
 5. check the creator in publication section of the nanopub (FIP/SIP Wizard or ORCID-published in nanodash)
