@@ -30,6 +30,7 @@ assignees: ''
 | ---- | ---- |
 | Reviewer name | |
 | Reviewer ORCID | |
+| Decision: approve (A), reject (R), improve with comments (I) | |
 
 # Revisions
 
