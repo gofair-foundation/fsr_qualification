@@ -30,7 +30,8 @@ A. Choose an issue from GitHub: https://github.com/gofair-foundation/fsr_qualifi
 B. Check for duplicates
 
 1. Use the API: [check duplicates](https://peta-pico.github.io/tapas/tapas.html?api=peta-pico/dsw-nanopub-api&op=/find_gofair_qualified_things_x) by searching with the most common name (and similar names) of the FSR if there exists more than one nanopub.
-2. The goal is to keep only the most informative nanopub, possibly the latest one. Duplicates will need to retracted/disapproved (see [F3C](#f-3c-when-the-fsr-nanopub-should-be-retracted)) and any accompanying GitHub issues closed accordingly. Therefore it is essential that the same person(s) work on all duplicates of one resource.  
+2. The goal is to keep only the most informative nanopub, bear in mind that you should also check for the most frequently used resource in the FIPs/SIPs. Check their utilisation using the FSR thing URI within the [FSR in FIP/SIP API](https://github.com/peta-pico/dsw-nanopub-api/blob/main/tables/new_matrix_reduced.csv). However the most frequently used nanopub may need to be improved (as per the process in [F3B](#f-3b-proposal-accept-with-improvements) below).
+3. Duplicates will need to retracted/disapproved (see [F3C](#f-3c-when-the-fsr-nanopub-should-be-retracted)) and any accompanying GitHub issues closed accordingly. Therefore it is essential that the same person(s) work on all duplicates of one resource.  
 
 #### **Git Document Quality Check ->** [**G1 B**](#g1-b-steps-for-the-editor-to-document-the-quality-check)
 
@@ -38,7 +39,7 @@ C. Perform Quality check and document it in the GitHub issue table:
 
 1. Add your name and ORCID
 
-2. Add the FSR long name, the FSR thing URI and the FSR nanopub URI
+2. Add the FSR long name and the FSR thing URI
 
 3. Add all URIs of duplicate(s) if they exist using the *Check Duplicates API*
   
@@ -168,9 +169,13 @@ You will have received an email alert for the assigned issue, you can now view t
 #### **Reviewer check ->** [**F2**](https://docs.google.com/document/d/1Q0LX-5UAALDbSgLlvUvmI06ukdqHixVYO5b-9QEeFMo/edit#heading=h.zdtmx0y9xun7)
 
 1. Review the proposed changes in first table of the GitHub issue.
-2. Capture your decision on whether you **Approve**, or **Request changes** (or **Comment** if you need further information or have a different opinion on the course of action) as a comment on the issue: 
+2. **Issues 639 onwards** (new template):  
+   a. Add your name and ORCID to the second table of the GitHub issue  
+   b. Capture your decision on whether you **Approve**, or **Reject** or **Improve** (with comments)  
+3. **Issues up to 638**:  
+   a. Capture your decision on whether you **Approve**, or **Request changes** (or **Comment** if you need further information or have a different opinion on the course of action) as a comment on the issue: 
    ![gh_issue_comment](images/gh_issue_comment.png)
-3. Reassign the issue back to the editor.
+5. Reassign the issue back to the editor.
 
 
 
@@ -178,8 +183,9 @@ You will have received an email alert for the assigned issue, you can now view t
 
 #### **Perform the actions ->** [**F3**](#f13-as-editor)
 
-1. Perform the proposed actions according to the review outcome (in nanodash and FIP/SIP Wizard)
-2. Edit the issue description to add your annotations in the 2nd table between the pipe (|) delimiters.
+1. Perform the proposed actions according to the review outcome (in nanodash and FIP/SIP Wizard)  
+   a. If a FAIRsharing DOI needs to be added, in the FIP Wizard this can be added as a Resource URI to II.9 "Related resources to which this resource can be mapped to and which are used to derive its description". Similarly in nanodash this URI would be introduced as `exactMatch` in the last assertion statement.
+2. Edit the issue description to add your annotations in the bottom table between the pipe (|) delimiters.
    ![gh_issue_md_editing_table2](images/gh_issue_md_editing_table2.png)
 3. Close the issue
    ![gh_issue_close](images/gh_issue_close.png)
