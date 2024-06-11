@@ -30,30 +30,38 @@ A. Choose an issue from GitHub: https://github.com/gofair-foundation/fsr_qualifi
 B. Check for duplicates
 
 1. Use the API: [check duplicates](https://peta-pico.github.io/tapas/tapas.html?api=peta-pico/dsw-nanopub-api&op=/find_gofair_qualified_things_x) by searching with the most common name (and similar names) of the FSR if there exists more than one nanopub.
-2. The goal is to keep only the most informative nanopub, possibly the latest one. Duplicates will need to retracted/disapproved (see [F3C](#f-3c-when-the-fsr-nanopub-should-be-retracted)) and any accompanying GitHub issues closed accordingly.
+2. The goal is to keep only the most informative nanopub, possibly the latest one. Duplicates will need to retracted/disapproved (see [F3C](#f-3c-when-the-fsr-nanopub-should-be-retracted)) and any accompanying GitHub issues closed accordingly. Therefore it is essential that the same person(s) work on all duplicates of one resource.  
 
 #### **Git Document Quality Check ->** [**G1 B**](#g1-b-steps-for-the-editor-to-document-the-quality-check)
 
-C. Perform Quality check:
+C. Perform Quality check and document it in the GitHub issue table:
 
-1. check if the description is informative enough or if it needs to be corrected/improved
+1. Add your name and ORCID
 
-2. check if the allocated FSR types are all correct
+2. Add the FSR long name, the FSR thing URI and the FSR nanopub URI
 
-3. check if the links provided are working
+3. Add all URIs of duplicate(s) if they exist using the *Check Duplicates API*
+  
+4. check if the web links provided are working (add Y or N)
+   
+5. Propose new web links if needed
+   
+7. Check if the description is informative enough or if it needs to be corrected/improved (add Y or N)
 
-   - If the FSR was created in the FIP/SIP wizard check if the `prov:wasDerivedFrom` in the pubinfo resolves to the correct FSR project (see https://github.com/fip-wizard/fip-wizard/issues/1)
+8. Check if the allocated FSR types are all correct (add Y or N)
+  
+9. Check if the resource is described in FAIRsharing and if there exists a DOI. If so, then check if the nanopub already refers to it. In case the FAIRsharing does not refer to it, add it in the table. FAIRsharing has only a few types included, so no problem if you can’t find it.
+  
+11. If the FSR was created in the FIP/SIP wizard add F or S in the table, otherwise it was created in nanodash, so should add the ORCID of the creator. In addition, check if the `prov:wasDerivedFrom` in the pubinfo section of the nanopublication resolves to the correct FSR project in the wizard (see https://github.com/fip-wizard/fip-wizard/issues/1)
 
-4. check if the resource is described in FAIRsharing and if there exists a PID. If so, then check if the nanopub refers to it or if it needs to be added. Otherwise, skip it - FAIRsharing has only a few types included, so no problem if you can’t find it.
+Finally,
 
-5. check the creator in publication section of the nanopub (FIP/SIP Wizard or ORCID-published in nanodash)
+D. Propose an action:
 
-
-D. Propose action:
-
-1. accept as is 
-2. improve 
-3. reject
+1. accept as is (A)
+2. improve (I)
+3. reject (Retract - R, or Disapprove - D)
+   
       and assign a reviewer to check the proposal based on his/her expertise. If the reviewer doesn’t respond within 24 hours, check for another reviewer.
 
 ### **F 2 The Reviewer checks the proposal** 
